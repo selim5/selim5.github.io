@@ -69,34 +69,34 @@ class Game extends React.Component {
     }
 }
 
-class Counter extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            value: 0,
-        };
-    }
+// class Counter extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             value: 0,
+//         };
+//     }
 
-    handleIncrement= () => ({
-        this.setState(state => {
-           value: state.value + 1 
-        });
-      });
-      handleDecrement= () => ({
-        this.setState(state => {
-           value: state.value - 1 
-        });
-      });
-    render() {
-        return (
-            <div>
-                <h2>{this.state.value}</h2>
-                <button >   Decrement</button>
-                <button >   Increment</button>
-            </div>
-        );
-    }
-}
+//     handleIncrement= () => ({
+//         this.setState(state => {
+//            value: state.value + 1 
+//         });
+//       });
+//       handleDecrement= () => ({
+//         this.setState(state => {
+//            value: state.value - 1 
+//         });
+//       });
+//     render() {
+//         return (
+//             <div>
+//                 <h2>{this.state.value}</h2>
+//                 <button >   Decrement</button>
+//                 <button >   Increment</button>
+//             </div>
+//         );
+//     }
+// }
 
 
 // ========================================
