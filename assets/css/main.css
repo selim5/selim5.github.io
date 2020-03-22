@@ -1764,7 +1764,12 @@ input, select, textarea {
 				width: 48px;
 				height: 48px;
 			}
-
+		
+		.image-cropper {
+				position: relative;
+				overflow: hidden;
+				border-radius: 50%;
+			}
 		.image.fit {
 			display: block;
 			width: 100%;
