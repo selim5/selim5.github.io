@@ -210,6 +210,10 @@ input, select, textarea {
 		clear: both;
 	}
 
+
+	.paragraph {
+		text-align: left;
+	}
 /* Container */
 
 	.container {
@@ -217,6 +221,7 @@ input, select, textarea {
 		max-width: 100%;
 		width: 1400px;
 	}
+
 
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
@@ -1726,6 +1731,8 @@ input, select, textarea {
 
 		}
 
+
+
 /* Sections/Article */
 
 	section, article {
@@ -1800,11 +1807,11 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		padding-left: 1em;
+		padding-left: 2em;
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding-left: .5em;
 		}
 
 	ol {
@@ -2267,6 +2274,26 @@ input, select, textarea {
 			#main > section.four {
 				background-color: #e8edec;
 			}
+
+			.text-content {
+				text-align: left;
+				margin: 20px;
+				padding: 20px;
+			  }
+			.text-content-sub {
+				text-align: left;
+				background-color: rgb(255, 255, 255);
+				margin: 20px;
+				padding: 20px;
+			  }
+			  .text-content-breaker {
+				text-align: left;
+				background-color: rgba(83, 50, 50, 0.582);
+				margin: 2px;
+				padding: 2px;
+			  }
+	
+	
 
 /* Wide */
 
