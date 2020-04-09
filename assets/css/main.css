@@ -1731,6 +1731,22 @@ input, select, textarea {
 
 		}
 
+	.row-skills {
+		display: flex;
+		align-items: flex-start ;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.row-skills div {
+		width: 20%;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+	}
+
 
 
 /* Sections/Article */
@@ -1959,7 +1975,7 @@ input, select, textarea {
 		border-radius: 0.35em;
 		color: #fff !important;
 		text-decoration: none;
-		padding: 0.75em 2.5em 0.75em 2.5em;
+		padding: 0.35em 3.5em 0.35em 3.5em;
 		background-color: #8ebebc;
 		border: 0;
 		cursor: pointer;
@@ -1993,7 +2009,7 @@ input, select, textarea {
 
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-		margin-bottom: 40px;
+		/* margin-bottom: 40px; */
 	}
 
 		.item header {
@@ -2288,7 +2304,7 @@ input, select, textarea {
 			  }
 			  .text-content-breaker {
 				text-align: left;
-				background-color: rgba(83, 50, 50, 0.582);
+				background-color: rgba(78, 78, 78, 0.582);
 				margin: 2px;
 				padding: 2px;
 			  }
@@ -2544,7 +2560,7 @@ input, select, textarea {
 						color: #fff;
 						font-size: 18px;
 						background: rgba(128, 136, 144, 0.5);
-						border-radius: 0.35em;
+						border-radius: 0.1em;
 						text-align: center;
 						position: absolute;
 						left: 0.5em;
