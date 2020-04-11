@@ -166,12 +166,16 @@ input, select, textarea {
 	a {
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+		border-bottom: solid 2px rgba(177, 62, 62, 0.5);
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		outline: 0;
+	}
+
+	.image-link a {
+		border-bottom: none;
 	}
 
 		a:hover {
@@ -1976,7 +1980,7 @@ input, select, textarea {
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.35em 3.5em 0.35em 3.5em;
-		background-color: #8ebebc;
+		background-color: #af453e;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1994,7 +1998,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #dd4c4c;
 		}
 
 		input[type="button"]:active,
@@ -2002,8 +2006,67 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #7eaeac;
+			background-color: #c77d40;
 		}
+
+.center-flex {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.code {
+			background-color: black;
+			background-image: radial-gradient(
+			  rgba(50, 68, 102, 0.75), black 120%
+			);
+			height: 5%;
+			width: 55%;
+			margin: 3%;
+			border-radius: 4px;
+			/* margin-top: 0px; */
+			/* margin-bottom: 10px; */
+			overflow: hidden;
+			padding: 1.5%;
+			color: white;
+			font: 80% Inconsolata, monospace;
+			text-shadow: 0 0 5px #C8C8C8;
+			&::after {
+			  content: "";
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100vw;
+			  height: 100vh;
+			  background: repeating-linear-gradient(
+				0deg,
+				rgba(black, 0.15),
+				rgba(black, 0.15) 1px,
+				transparent 1px,
+				transparent 2px
+			  );
+			  pointer-events: none;
+			}
+		  }
+		  ::selection {
+			background: #0080FF;
+			text-shadow: none;
+		  }
+
+.code-emph {
+	color: rgb(197, 82, 82);
+	text-shadow: 0 0 5px rgb(233, 90, 90);
+
+}
+.center {
+	margin: 0px;
+}
+
+.center-emph {
+	/* margin: 0px 40%; */
+	/* padding: 0%; */
+	border-bottom: 4px rgb(161, 82, 82) solid;
+}
 
 /* Item */
 
@@ -2058,6 +2121,7 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+
 
 /* Header */
 
@@ -2352,7 +2416,7 @@ input, select, textarea {
 			}
 
 			#main section.cover {
-				padding: 5em 0;
+				padding: 7em 0;
 			}
 
 	}
